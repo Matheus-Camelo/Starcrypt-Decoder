@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-primaria: ;
+    --cor-secundaria: ;
+    --cor-terciaria: ;
+    --cor-hover: ;
+    /* #e2e2e2 */
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+body{
+    border: 2px solid blue;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    border: 2px solid black;
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho_logo{
+    display:flex;
+    gap: 80px;
+}
+
+.apresentacao{
+    border: 2px solid red;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    border: 2px solid green;
+}
+.apresentacao__conteudo__container__esquerdo{
+    border: 2px solid pink;
+}
+.apresentacao__conteudo__titulo{
+    border: 2px solid blue;
+}
+.apresentacao__conteudo__input{
+    border: 2px solid yellow;
+    width: 42.5rem;
+    height: 44rem;
+}
+
+.apresentacao__conteudo__botoes{
+    border: 2px solid brown;
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo__botao{
+    border: 2px solid gray;
+}
+.apresentacao__conteudo__container__direito{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    justify-content: flex-end;
+    gap: 4%;
+    color: black;
+    border-radius: 32px;
+    border: 2px solid black;
+    padding: 3rem;
+    width: 25rem;
+    height: 59rem;
+    background-color: purple;
+}
+.apresentacao__conteudo__resposta__direito{
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rodape{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    padding: 24px;
+    color: var(--cor-primaria);;
+    background-color: var(--cor-terciaria);;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho_logo{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+    .apresentacao__conteudo__container__direito{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 4%;
+        color: black;
+        padding: 1rem;
+        width: 43rem;
+        height: 8.5rem;
+
+    }
+
+    .apresentacao__conteudo__container__direito__imagem{
+        display: none;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StarCrypt</title>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <a class="cabecalho__logo" href="index.html">
+                <img src="./assets/spaceship_2.png" alt="">
+            </a>
+        </header>
+        <main class="apresentacao">
+            <section class="apresentacao__conteudo">
+                <div class="apresentacao__conteudo__container__esquerdo">
+                    <h1 class="apresentacao__conteudo__titulo">
+                        StarCrypt Decoder
+                    </h1>
+                    <textarea id="textoDigitado" class="apresentacao__conteudo__input" placeholder="Digite seu texto aqui..."></textarea>
+                </div>
+                <div class="apresentacao__conteudo__alerta">
+                    <h6>Apenas letras minúsculas e sem acento.</h6>
+                </div>
+                <div class="apresentacao__conteudo__botoes">
+                    <button onclick="criptografarTexto()" class="apresentacao__conteudo__botao">Criptografar</button>
+                    <button onclick="descriptografarTexto()" class="apresentacao__conteudo__botao">Descriptografar</button>
+                </div>
+            </section>
+            <section class="apresentacao__conteudo__container__direito">
+                <h2 id="textoPronto">Nenhuma mensagem encontrada</h2>
+                <img class= "apresentacao__conteudo__container__direito__imagem" src="assets/astronauta.png" alt="astronauta">
+                <h3 class="apresentacao__conteudo__container__direito__mensagem">
+                    Digite um texto que você deseja criptografar ou descriptografar.
+                </h3>
+                <button onclick="copiarTexto()" class="apresentacao__conteudo__botao__direito">Copiar</button>
+            </section>
+        </main>
+        <footer class="rodape">
+            <p>Desenvolvido por Matheus Camelo</p>
+        </footer>
+        <script src="app.js" defer></script>
+    </body>
+</html>
