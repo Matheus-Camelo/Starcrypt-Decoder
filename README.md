@@ -1,5 +1,6 @@
 ## **Starcrypt Decoder**
 Aplicação de criptografia simples
+<br>
 https://starcrypt-decoder.vercel.app/
 
 ## Funcionalidade 🤖
