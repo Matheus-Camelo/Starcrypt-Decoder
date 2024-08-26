@@ -1,11 +1,11 @@
  **(EM PRODUÇÃO)**
 
 
-## **Starcrypt** Decoder 
+## **Starcrypt Decoder**
 Aplicação de criptografia simples
 
 ## Funcionalidade 🤖
-**Starcrypt** é um projeto desenvolvido para o desafio do curso [Alura One](https://www.oracle.com/br/education/oracle-next-education/). É uma ferramenta projetada para criptografar e descriptografar textos usando um método básico de substituição, permitindo que você tenha a capacidade de gerar e decifrar mensagens codificadas.
+**Starcrypt Decoder** é um projeto desenvolvido para o desafio do curso [Alura One](https://www.oracle.com/br/education/oracle-next-education/). É uma ferramenta projetada para criptografar e descriptografar textos usando um método básico de substituição, permitindo que você tenha a capacidade de gerar e decifrar mensagens codificadas.
 
 A criptografia e descriptografia utilizada pela aplicação consiste em substituir cada vogal por uma sequência de caracteres específica.
 
