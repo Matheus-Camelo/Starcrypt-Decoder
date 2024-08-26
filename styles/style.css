@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root{
+    --cor-primaria: #000046;
+    --cor-secundaria: #D9DBF1;
+    --cor-terciaria: #FFFCE8;
+    --cor-hover: ;
+    --fonte-primaria: "Orbitron", sans-serif;
+    --fonte-secundaria: "Orbitron", sans-serif;
+}
+
+body{
+    background-color: var(--cor-primaria);
+    color: white;
+    font-family: var(--fonte-primaria);
+}
+
+.app-main{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3% 12%;
+    gap: 90px;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .title-container{
+        display: flex;
+        margin-bottom: 90px;
+        font-size: 48px;
+    }
+
+    #inputArea{
+        background-color: transparent;
+        color: white;
+        font-family: var(--fonte-primaria);
+        resize: none;
+        border: none;
+        outline: none;
+        width: 90%;
+    }
+    
+    #inputArea::placeholder{
+        color: white;  
+      }
+
+    .buttons-container{
+        display: flex;
+        gap: 90px;
+        margin-top: 16px;
+    }
+
+    .button-encrypt{
+        background-color: var(--cor-secundaria);
+        font-size: 1rem;
+        font-family: var(--fonte-primaria);
+        font-weight: bold;
+        border-radius: 24px;
+        height: 62px;
+        width: 328px
+    }
+    
+    .button-decrypt{
+        background-color: var(--cor-secundaria);
+        font-size: 1rem;
+        font-family: var(--fonte-primaria);
+        font-weight: bold;
+        border-radius: 24px;
+        height: 62px;
+        width: 328px
+    }
+
+    #letterWarning {
+        display: flex;
+        gap: 5px;
+    }
+
+}
+
+.right-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 32px;
+    padding: 32px;
+    background-color: var(--cor-secundaria);
+    box-shadow: 0 0 5px 5px #7b7b7b;
+    height: 720px;
+    width: 350px;
+
+    #copyMessage{
+        margin-top: 90px;
+        visibility: hidden;
+        margin-top: 90px;
+        margin-bottom: 40px;
+        font-family: var(--fonte-primaria);
+        font-weight: bold;
+        border-radius: 24px;
+        height: 62px;
+        width: 328px;
+        border: 1px solid black;
+        
+    }
+    
+    .right-container-title{
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: black;
+        margin-top: 32px;
+
+    }
+
+    .right-container-subtext{
+        font-size: 0.6rem;
+        color: black;
+        margin-top: 10px;
+        font-weight: bold;
+        
+    }
+
+    .right-container-output{
+        word-break: break-word;
+        overflow-wrap: break-word;
+        max-height: 100%;
+        scrollbar-width: none;
+        overflow-y: auto;
+        color: black;
+    }
+
+    #copy-button{
+        margin-bottom: -36px;
+    }
+
+
+}
+
+.right-container.encrypted {
+    justify-content: space-between;
+}
+
+.right-container.decrypted {
+    justify-content: space-between;
+}
+
+#credit{
+    font-family: var(--fonte-primaria);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4px;
+
+    .creditLink{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .no-style-link:visited,
+    .no-style-link:hover,
+    .no-style-link:active {
+        color: inherit;
+    }
+
+    .git-logo{
+        height: 18px;
+        width: 18px;
+    }
+}
+@media (max-width: 768px) {
+
+    .app-main{
+        display: flex;
+        flex-direction: column;
+        padding-left: 4%
+
+    }
+
+    .left-container{
+
+        .buttons-container{
+            gap: 5px;
+        }
+    }
+
+    .right-container{
+        height: auto;
+        min-height: 150px;
+        width: 100%;
+        padding-bottom: 1%;
+
+        #alien-star{
+            display: none;
+        }
+
+        .right-container-output {
+            max-height: none;
+            overflow-y: visible;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+
+    .app-main{
+        display: flex;
+        flex-direction: column;
+        padding-left: 4%
+
+    }
+
+    .left-container{
+
+        .buttons-container{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10%;
+        }
+
+        #inputArea{
+            height: 350px;
+        }
+
+        #letterWarning {
+            font-size: 0.9rem;
+            height: 15px;
+        }
+    }
+
+    .right-container{
+        height: auto;
+        min-height: 150px;
+        width: 90%;
+
+        #alien-star{
+            display: none;
+        }
+
+        .right-container-output {
+            max-height: none;
+            overflow-y: visible;
+        }
+
+        
+        .right-container-title{
+            font-size: 1rem;
+        }
+    
+        .right-container-subtext{
+            font-size: 0.5rem;
+        }
+    }
+}

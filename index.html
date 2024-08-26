@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Starcrypt Decoder</title>
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <main class="app-main">
+            <section class="app-left-section">
+                <div class="left-container">   
+                    <div class="title-container">
+                        <h1>
+                            Starcrypt Decoder
+                        </h1>
+                    </div>
+                    <textarea id="inputArea" placeholder="Digite o que será criptografado aqui...", rows="32", cols="90"></textarea>
+                    <p id="letterWarning">
+                        <img src="/assets/exclamation.png" alt="">
+                        Apenas letras minúsculas e sem acento.
+                    </p>
+                    <div class="buttons-container">
+                        <button onclick="encrypt()" class="button-encrypt">
+                            Criptografar
+                        </button>
+                        <button onclick="decrypt()" class="button-decrypt">
+                            Descriptografar
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="app-right-section">
+                <div class="right-container">
+                    <h2 id="outputMessage" class="right-container-output">
+                        
+                    </h2>
+                    <img id="alien-star" src="/assets/alien-star.png" alt="aparentemente aqui será uma estrela">
+                    <h3 class="right-container-title">
+                            Nenhuma mensagem encontrada.
+                    </h3>
+                    <h4 class="right-container-subtext">
+                        Digite um texto que você deseja criptografar ou descriptografar.
+                    </h4>
+                    <div id="copy-button">
+                        <button id="copyMessage" onclick="copy()" class="button-copy">
+                            Copiar
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="credit">
+            <a href="https://github.com/Matheus-Camelo" class="creditLink"> Matheus Camelo</a> 
+            <a href="https://github.com/Matheus-Camelo" class="creditLink"> <img src="./assets/github-icon.png" class="git-logo" alt=""></a> 
+        </footer>
+        <script src="app.js" defer></script>
+    </body>
+</html>
